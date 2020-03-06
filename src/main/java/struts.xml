@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+<package name="default" extends="struts-default">
+	
+<action name="register" class="com.lithan.CommunityPortal.controller.RegisterAction">  
+<result name="success">/view/thankYou.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action> 
+
+<action name="thank" class="com.lithan.CommunityPortal.mav.Testing">  
+<result name="success">/view/Login.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+
+<action name="Sign_Up" class="com.lithan.CommunityPortal.mav.Testing">  
+<result name="success">/view/Registration.jsp</result>	
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+ <action name="Sign_In" class="com.lithan.CommunityPortal.mav.Testing">  
+<result name="success">/view/Login.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action> 
+<action name="login" class="com.lithan.CommunityPortal.controller.LoginAction">  
+<result name="success">/view/admin.jsp</result>
+<result name="u_search">/view/Search.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action> 
+<action name="seaact" class="com.lithan.CommunityPortal.mav.Testing">  
+<result name="success">/view/Search.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+<action name="searchAny" class="com.lithan.CommunityPortal.controller.SearchAction">  
+<result name="success">/view/ListSearch.jsp</result>
+<result name="nolist">/ErrorPages/SearchError.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+<action name="adminpub" class="com.lithan.CommunityPortal.controller.AdminPublic">  
+<result name="success">/view/publicPro.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+<action name="update" class="com.lithan.CommunityPortal.mav.Testing">  
+<result name="success">/view/Update.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+<action name="forgot" class="com.lithan.CommunityPortal.mav.Testing">  
+<result name="success">/view/GetEmail.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+<action name="viewall" class="com.lithan.CommunityPortal.mav.Testing">  
+<result name="success">/view/Profile.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+<action name="adminhome" class="com.lithan.CommunityPortal.mav.Testing">  
+<result name="success">/view/admin.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+
+</action>
+<action name="updateprofile" class="com.lithan.CommunityPortal.controller.UpdateAction">  
+<result name="success">/view/Profile.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result></action>
+
+<action name="listusers" class="com.lithan.CommunityPortal.controller.SearchAction">  
+<result name="success">/view/UsersList.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+
+<action name="emailref" class="com.lithan.CommunityPortal.controller.EmailCheckAction">  
+<result name="success">/view/Forgot.jsp</result>
+<result name = "error">/view/Login.jsp</result>
+</action>
+
+<action name="resetpass" class="com.lithan.CommunityPortal.controller.PasswordUpdate">  
+<result name="success">/view/Login.jsp</result>
+<result name = "error">/view/GetEmail.jsp</result>
+</action>
+
+<action name="adminview" class="com.lithan.CommunityPortal.controller.ViewUserAction">  
+<result name="success">/view/AllUsers.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+
+<action name="logout" class="com.lithan.CommunityPortal.controller.LoginAction" method="logout" >  
+<result name="success">/view/Login.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+
+<action name="public" class="com.lithan.CommunityPortal.controller.ViewPublic">  
+<result name="success">/view/PublicProfile.jsp</result>
+<result name="error">/ErrorPages/Error.jsp</result>
+</action>
+
+<action name="deleterecord" class="com.lithan.CommunityPortal.controller.DeleteAction">  
+<result name="delete">/view/admin.jsp</result>
+</action>
+
+	</package>
+	</struts>

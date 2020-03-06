@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+.divClass {
+            font-size: 18px;
+        }
+    .material-icons{
+    	cursor: pointer;
+    }
+    .material-icons:hover {
+    	font-size: 20px;
+    }
